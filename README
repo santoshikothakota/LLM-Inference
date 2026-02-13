@@ -39,11 +39,14 @@ This approach ensures:
 
 ## 📂 Project Structure
 
+```
 LLM-Inference/
 │
 ├── run.py
 ├── requirements.txt
 ├── README.md
+```
+
 
 
 ## ⚙️ Installation & Setup
@@ -76,3 +79,4 @@ model_path = "path_to_your_model.gguf"
 ```bash
 python run.py
 ```
+
