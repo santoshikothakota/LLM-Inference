@@ -46,8 +46,6 @@ LLM-Inference/
 ├── README.md
 
 
----
-
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
@@ -55,19 +53,26 @@ LLM-Inference/
 ```bash
 git clone https://github.com/santoshikothakota/LLM-Inference.git
 cd LLM-Inference
-2️⃣ Install Dependencies
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-3️⃣ Download a GGUF Model
+### 3️⃣ Download a GGUF Model
 
-Download a quantized .gguf model file (e.g., Mistral 7B).
+Download a quantized `.gguf` model file (e.g., Mistral 7B).
 
-Update the model_path variable inside run.py:
+Update the `model_path` variable inside `run.py`:
 
+```python
 model_path = "path_to_your_model.gguf"
+```
 
-4️⃣ Run the Application
+### 4️⃣ Run the Application
+
+```bash
 python run.py
-
-
-
+```
