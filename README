@@ -1,25 +1,73 @@
-# Local LLM Inference using llama.cpp
+# 🧠 Local LLM Inference using llama.cpp
 
-This project demonstrates running Large Language Models locally using llama.cpp and llama-cpp-python without cloud APIs.
+This project demonstrates how to run Large Language Models (LLMs) locally using **llama.cpp** and **llama-cpp-python**, without relying on cloud APIs.  
 
-## Features
-- Local inference on CPU
-- Supports quantized GGUF models
-- Privacy-focused AI execution
+The goal of this project is to understand the internal workflow of LLM inference and implement a privacy-focused AI system that runs entirely on a local machine.
 
-## Tech Stack
-- Python
-- llama-cpp-python
-- Mistral 7B (GGUF format)
+---
 
-## Setup
+## 🚀 Project Overview
 
-1. Install dependencies:
+Large Language Models are often accessed through cloud APIs. In this project, the model runs completely offline using quantized `.gguf` files and CPU-based inference.
+
+This approach ensures:
+- No external API dependency
+- No data sharing with third-party services
+- Reduced operational cost
+- Greater control over model execution
+
+---
+
+## ✨ Key Features
+
+- ✅ Local LLM inference on CPU
+- ✅ Supports quantized GGUF models
+- ✅ Privacy-preserving AI execution
+- ✅ Lightweight Python implementation
+- ✅ Simple and modular structure
+
+---
+
+## 🛠 Tech Stack
+
+- **Python**
+- **llama-cpp-python**
+- **llama.cpp backend**
+- **Mistral 7B (GGUF format)**
+
+---
+
+## 📂 Project Structure
+
+LLM-Inference/
+│
+├── run.py
+├── requirements.txt
+├── README.md
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/santoshikothakota/LLM-Inference.git
+cd LLM-Inference
+2️⃣ Install Dependencies
 pip install -r requirements.txt
 
-2. Download a GGUF model file separately.
+3️⃣ Download a GGUF Model
 
-3. Update model_path in run.py
+Download a quantized .gguf model file (e.g., Mistral 7B).
 
-4. Run:
+Update the model_path variable inside run.py:
+
+model_path = "path_to_your_model.gguf"
+
+4️⃣ Run the Application
 python run.py
+
+
+
