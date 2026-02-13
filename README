@@ -1,0 +1,25 @@
+# Local LLM Inference using llama.cpp
+
+This project demonstrates running Large Language Models locally using llama.cpp and llama-cpp-python without cloud APIs.
+
+## Features
+- Local inference on CPU
+- Supports quantized GGUF models
+- Privacy-focused AI execution
+
+## Tech Stack
+- Python
+- llama-cpp-python
+- Mistral 7B (GGUF format)
+
+## Setup
+
+1. Install dependencies:
+pip install -r requirements.txt
+
+2. Download a GGUF model file separately.
+
+3. Update model_path in run.py
+
+4. Run:
+python run.py
